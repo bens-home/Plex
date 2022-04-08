@@ -1,6 +1,6 @@
 # Plex
 
-The setup I use for running a Plex server at home using Docker.
+The setup I use for running a Plex server at home using Docker. It's a docker-compose that uses the [linuxserver/plex](https://hub.docker.com/r/linuxserver/plex) image.
 
 *Note*: You will likely need to update the `volume` mappings in the `docker-compose.yml` file to point to the correct directories where the media is stored on your server.
 
