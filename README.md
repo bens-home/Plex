@@ -25,3 +25,18 @@ sudo ufw allow 32400
 ## Access outside of home network
 
 To access these Plex libraries outside of the LAN you will need to port forward `32400` on your router. 
+
+Make sure to share your libraries with any users that you want to!
+
+## Access when you have no internet
+
+Plex will normally require you to authenticate with an account when signing in. If your ISP goes out and you lose internet 
+but still want to watch stuff locally, then you need to specify some allow devices. 
+
+In the web interface for Plex, go the server settings > Network. Towards the bottom is "List of IP addresses and networks that are allowed without auth". Add the following to that box:
+
+```
+192.168.1.1/255.255.255.0
+```
+
+This will allow any device that is connected to your router to keep connected. You can also add just specific devices if you want
