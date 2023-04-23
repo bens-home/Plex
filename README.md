@@ -19,7 +19,7 @@ It will put all the config stuff in a `plex_config` directory, relative to the `
 Once running, it will be running Plex on port `32400` on the host machine, so make sure to allow it through the firewall if necessary:
 
 ```
-sudo ufw allow 32400
+sudo ufw allow 32400 comment "Plex public server"
 ```
 
 ## Access outside of home network
